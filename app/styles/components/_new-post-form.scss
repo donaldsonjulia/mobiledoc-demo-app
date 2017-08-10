@@ -1,0 +1,62 @@
+.new-post-form {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: $small-spacing;
+
+  &__title {
+    font-size: 1.6em;
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  &__editor {
+    margin-top: $small-spacing;
+    margin-bottom: $small-spacing;
+  }
+
+  &__submit-btn {
+    float: right;
+  }
+
+  &__error {
+    color: red;
+  }
+
+  .mobiledoc-editor__editor {
+    //style overrides for the editor instance inside of new-post-form
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    border: $base-border;
+    border-radius: 0 0 $base-border-radius $base-border-radius;
+    height: 350px;
+    margin-top: 0;
+    overflow: scroll;
+    padding: 1em 0.5em 0.5em;
+
+    //styling for the dom elements created by the editor while editing
+    ol,
+    ul {
+      list-style-position: inside;
+      margin: 0 0 $small-spacing;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+  }
+
+  //placeholder styling
+  .__mobiledoc-editor.__has-no-content:after {
+    content: attr(data-placeholder);
+    color: tint($base-font-color, 40%);
+    cursor: text;
+    position: absolute;
+    top: 1em;
+  }
+}

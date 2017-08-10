@@ -1,0 +1,15 @@
+<div class="editor-toolbar">
+  <div class="editor-toolbar__section">
+    {{#mobiledoc-markup-button editor=editor for="strong"}}{{fa-icon  "bold"}}{{/mobiledoc-markup-button}}
+    {{#mobiledoc-markup-button editor=editor for="em"}}{{fa-icon  "italic"}}{{/mobiledoc-markup-button}}
+  </div>
+  <div class="editor-toolbar__section">
+    {{#mobiledoc-section-button editor=editor for="h1"}}{{fa-icon "header"}}{{/mobiledoc-section-button}}
+    {{#mobiledoc-section-button editor=editor for="ul"}}{{fa-icon "list-ul"}}{{/mobiledoc-section-button}}
+    {{#mobiledoc-section-button editor=editor for="ol"}}{{fa-icon "list-ol"}}{{/mobiledoc-section-button}}
+  </div>
+  <div class="editor-toolbar__section">
+    {{#mobiledoc-link-button editor=editor}}{{fa-icon "link"}}{{/mobiledoc-link-button}}
+  </div>
+  {{yield}}
+</div>

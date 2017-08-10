@@ -1,0 +1,22 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: $base-spacing;
+  height: 75px;
+  background-color: #efefef;
+
+
+  &__title {
+    color: $base-font-color;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
+  &__menu {
+    a {
+      font-family: $heading-font-family;
+      padding: 10px;
+      margin-left: 10px;
+    }
+  }
+}

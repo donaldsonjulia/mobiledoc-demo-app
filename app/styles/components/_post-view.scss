@@ -1,0 +1,31 @@
+.post-view {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: $base-border;
+  padding: $base-spacing;
+
+  &__subject {
+    font-size: 1.6em;
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  &__body {
+
+    //styling for the dom elements rendered by mobiledoc
+    ol,
+    ul {
+      list-style-position: inside;
+      margin: 0 0 $small-spacing;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+  }
+}

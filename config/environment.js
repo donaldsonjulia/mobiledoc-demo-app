@@ -7,6 +7,14 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+
+    firebase: {
+       apiKey: "AIzaSyDyVhXSBizaY_bR_qYj4oT8ZYFZdTAIrAk",
+       authDomain: "mobiledoc-demo-app.firebaseapp.com",
+       databaseURL: "https://mobiledoc-demo-app.firebaseio.com",
+       storageBucket: "mobiledoc-demo-app.appspot.com",
+    },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

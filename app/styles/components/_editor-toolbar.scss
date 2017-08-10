@@ -1,0 +1,33 @@
+.editor-toolbar {
+  width: 100%;
+  border: $base-border;
+  border-bottom: 0;
+  border-radius: $base-border-radius $base-border-radius 0 0;
+
+  button {
+    background-color: transparent;
+    color: lighten($base-font-color, 30%);
+    padding: 0.5em;
+    min-width: 40px;
+
+    &.is-selected,
+    &:hover {
+      color: $base-font-color;
+    }
+  }
+
+  &__section {
+    display: inline;
+    padding: 0 15px;
+    border-right: $base-border;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+      padding-right: 0;
+    }
+  }
+}
