@@ -6,6 +6,7 @@
           {{#mobiledoc-editor
             on-change=(action 'mobiledocWasUpdated')
             cards=(mobiledoc-component-cards)
+            atoms=(mobiledoc-component-atoms)
             as |editor|}}
             {{editor-toolbar editor=editor}}
           {{/mobiledoc-editor}}
