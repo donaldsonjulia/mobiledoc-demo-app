@@ -1,0 +1,8 @@
+<div class="meme-card">
+      <div class="meme-card__content" style={{html-safe payload.imgSrc}}>
+          <p class="meme-card__text">{{payload.memeText}}</p>
+      </div>
+    {{#if editCard}}
+      <button class="meme-card__btn" onclick={{action editCard}}>Edit</button>
+    {{/if}}
+</div>
