@@ -1,0 +1,13 @@
+<div class="meme-card-editor">
+      <div class="meme-card-editor__content" style={{html-safe imgSrc}}>
+        {{textarea value=data.memeText class="meme-card-editor__textarea"}}
+      </div>
+    <label for="meme-select">choose image:</label>
+    <select name="meme-select" onchange={{action (mut image) value="target.value"}}>
+      {{#each imageOptions as |imgOpt|}}
+        <option value={{imgOpt}} selected={{eq imgOpt image}}>{{imgOpt}}</option>
+      {{/each}}
+    </select>
+    <button class="meme-card-editor__btn" onclick={{action saveCard (hash imgSrc=imgSrc image=image memeText=data.memeText)}}>Save</button>
+    <button class="meme-card-editor__btn" onclick={{action removeCard}}>Remove</button>
+</div>

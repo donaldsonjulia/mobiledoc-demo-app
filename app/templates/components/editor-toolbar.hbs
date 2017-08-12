@@ -10,6 +10,7 @@
   </div>
   <div class="editor-toolbar__section">
     {{#mobiledoc-link-button editor=editor}}{{fa-icon "link"}}{{/mobiledoc-link-button}}
+    <button {{action editor.addCardInEditMode 'meme-card'}}>add meme</button>
   </div>
   {{yield}}
 </div>

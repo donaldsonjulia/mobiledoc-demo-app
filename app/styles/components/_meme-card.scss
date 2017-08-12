@@ -1,0 +1,29 @@
+.meme-card {
+  width: 500px;
+  margin-bottom: $small-spacing;
+
+  &__content {
+    height: 250px;
+    width: 100%;
+    background-color: $light-gray;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__text {
+    font-family: $heading-font-family;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    background-color: rgba(0,0,0,.3);
+    padding: 2px; 
+  }
+
+
+
+}

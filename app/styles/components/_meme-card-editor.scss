@@ -1,0 +1,31 @@
+.meme-card-editor {
+  width: 500px;
+  padding: 10px;
+  background-color: $secondary-background-color;
+  margin-bottom: $small-spacing;
+
+  &__content {
+    height: 250px;
+    width: 100%;
+    background-color: $medium-gray;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+
+  &__textarea {
+    font-family: $heading-font-family;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    margin-bottom: 0;
+  }
+
+  &__btn {
+    margin-top: 10px;
+  }
+}

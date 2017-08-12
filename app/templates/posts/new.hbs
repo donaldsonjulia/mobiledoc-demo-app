@@ -5,6 +5,7 @@
       <div class="new-post-form__editor">
           {{#mobiledoc-editor
             on-change=(action 'mobiledocWasUpdated')
+            cards=(mobiledoc-component-cards)
             as |editor|}}
             {{editor-toolbar editor=editor}}
           {{/mobiledoc-editor}}
