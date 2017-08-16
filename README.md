@@ -1,7 +1,14 @@
 # mobiledoc-demo-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A demo app for using Mobiledoc in Ember, using the addons:
+
+[ember-mobiledoc-editor](https://github.com/bustle/ember-mobiledoc-editor)
+
+[ember-mobiledoc-dom-renderer](https://github.com/bustle/ember-mobiledoc-dom-renderer)
+
+For more about Mobiledoc, see [mobiledoc-kit](https://github.com/bustle/mobiledoc-kit)
+
+View the demo app at [https://mobiledoc-demo-app.firebaseapp.com](https://mobiledoc-demo-app.firebaseapp.com)
 
 ## Prerequisites
 
